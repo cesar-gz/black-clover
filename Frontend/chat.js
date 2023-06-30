@@ -20,26 +20,23 @@ const behaviorOfAssistant = `
     If you can not come to a clear answer, tell the user to provide more details
     in areas that you need help understanding.
     `;
-
+/*
 let prompt = `
     Execute the following actions:
-    1 - Take your time to search the internet to answer the following Text accurately.
-    2 - Determine what the correct answer is for the following Text delimited by <>.
-    3 - Output the answer in a table with rows ranging from 1 to 15. Each
-        row containing the name of the song in the respective order.
-        Format everything as HTML that can be used in a website.
+    1 - Determine what the correct answer is for the following text delimited by <>.
+    2 - Format your response as a list of items when appropriate.
+    3 - Separate your answer with line breaks when appropriate.
 
-    Separate your answer with line breaks when appropriate.
-
-    Text:
       <
-       What are the most popular songs in America for the year 2019?
+       Type a cheesy joke and a welcome message.
       >
     `;
+*/
+
+let prompt = "";
 
 const conversationContext = `
     You're welcome!
-    Thank you for giving me time to determine the right answer for you.
     How else can I assist you?
     `;
 
@@ -62,14 +59,15 @@ let GPT35Turbo = async (message) => {
   const response = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
     messages: message,
+    temperature: 0,
   });
 
   return response.data.choices[0].message.content;
 };
 
-/*
+
 const askQuestion = () => {
-  rl.question("Hello, enter a question ('exit' to quit):\n", async (userInput) => {
+  rl.question("Enter your question (or type 'exit' to close the program):\n", async (userInput) => {
     if (userInput === "exit") {
       rl.close();
       return;
@@ -86,21 +84,8 @@ const askQuestion = () => {
 };
 
 askQuestion();
-*/
-
-const response = await GPT35Turbo(GPT35TurboMessage);
-console.log(response + "\n");
 
 /*
-Notes for myself:
-
-Prompt Engineering Principle 1: Write clear, long, and specific instructions
-        Tactic 1: use delimiters: """ ``` --- < > <tag> </tag>
-        Tactic 2: ask for structured output: HTML, JSON
-        Tactic 3: check conditions are satisfied, check assumptions required to do task
-        Tactic 4: few-shot prompting: give successful examples of completing tasks then ask model to perform the task
-
-Prompt Engineering Principle 2: Give the model time to think
-        Tactic 1: Specify the steps required to complete a task
-        Tactic 2: Instruct model to work out its own solution before rushing to a conclusion
+const response = await GPT35Turbo(GPT35TurboMessage);
+console.log(response + "\n");
 */

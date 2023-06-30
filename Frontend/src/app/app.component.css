@@ -1,0 +1,61 @@
+.ground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#clover {
+  position: relative;
+  width: 250px;
+  height: 275px;
+}
+
+.leaf {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-color: rgb(27, 8, 8);
+  border-radius: 50% 50% 0 50%;
+  border: 5px solid rgb(163, 26, 26);
+}
+
+.stem {
+  position: absolute;
+  width: 20px;
+  height: 80px;
+  background-color: #4CAF50;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.leaf:nth-child(1) {
+  top: 0px;
+  left: 80px;
+  transform: rotate(45deg);
+}
+
+.leaf:nth-child(2) {
+  top: 110px;
+  left: -36px;
+  transform: rotate(317deg);
+}
+
+.leaf:nth-child(3) {
+  top: 110px;
+  left: 195px;
+  transform: rotate(133deg);
+}
+
+.leaf:nth-child(4) {
+  top: 200px;
+  left: -1px;
+  transform: rotate(269deg);
+}
+
+.leaf:nth-child(5) {
+  top: 211px;
+  left: 145px;
+  transform: rotate(190deg);
+}
