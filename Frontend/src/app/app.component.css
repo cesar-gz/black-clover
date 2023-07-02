@@ -1,6 +1,6 @@
 .ground {
   position: absolute;
-  top: 50%;
+  bottom: 300px;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
@@ -12,50 +12,88 @@
 }
 
 .leaf {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.leaf::before,
+.leaf::after {
+  content: "";
   position: absolute;
-  width: 160px;
-  height: 160px;
-  background-color: rgb(27, 8, 8);
-  border-radius: 50% 50% 0 50%;
-  border: 5px solid rgb(163, 26, 26);
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: rgb(27, 8, 8);
+  border-color: white;
+}
+
+.leaf::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.leaf::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 
 .stem {
   position: absolute;
+  background-color: rgb(27, 8, 8);
+  border: 1px solid white;
+  bottom: -232px;
+  z-index: 1;
+  border-radius: 0px 0px 40px 0px;
+  width: 4%;
+  height: 45%;
+  top: 100%;
+  left: 46%;
+  transform: rotate(10deg);
+}
+
+.ball {
+  position: absolute;
+  background-color: rgb(27, 8, 8);
   width: 20px;
-  height: 80px;
-  background-color: #4CAF50;
+  height: 20px;
+  border-radius: 50%;
+  top: -10px;
   left: 50%;
-  bottom: 0;
   transform: translateX(-50%);
 }
 
 .leaf:nth-child(1) {
-  top: 0px;
+  top: 201px;
   left: 80px;
-  transform: rotate(45deg);
+  transform: rotate(2deg);
 }
 
 .leaf:nth-child(2) {
-  top: 110px;
-  left: -36px;
-  transform: rotate(317deg);
+  top: 126px;
+  left: 43px;
+  transform: rotate(298deg);
 }
 
 .leaf:nth-child(3) {
-  top: 110px;
-  left: 195px;
-  transform: rotate(133deg);
+  top: 22px;
+  left: 112px;
+  transform: rotate(68deg);
 }
 
 .leaf:nth-child(4) {
-  top: 200px;
-  left: -1px;
-  transform: rotate(269deg);
+  top: -46px;
+  left: 50px;
+  transform: rotate(241deg);
 }
 
 .leaf:nth-child(5) {
-  top: 211px;
-  left: 145px;
-  transform: rotate(190deg);
+  top: -134px;
+  left: 102px;
+  transform: rotate(490deg);
 }
