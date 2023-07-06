@@ -28,7 +28,6 @@
   height: 80px;
   border-radius: 50px 50px 0 0;
   background: rgb(27, 8, 8);
-  border-color: white;
 }
 
 .leaf::before {
