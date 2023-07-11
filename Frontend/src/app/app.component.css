@@ -92,3 +92,58 @@
   box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
   border-radius: 50%;
 }
+
+
+.relative-container {
+  position: relative;
+  top: -270px;
+  filter: drop-shadow(0 0 5px black);
+  z-index: -2;
+}
+
+#leaf1 {
+  width: 275px;
+  height: 350px;
+  position: absolute;
+  top: -19px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+#leaf2 {
+  width: 420px;
+  height: 430px;
+  position: absolute;
+  top: 91px;
+  left: -81%;
+  transform: translate(-50%, -50%);
+}
+
+#leaf3 {
+  width: 220px;
+  height: 250px;
+  position: absolute;
+  top: 167px;
+  left: 132%;
+  transform: translate(-50%, -50%);
+}
+
+#leaf4 {
+  width: 310px;
+  height: 320px;
+  position: absolute;
+  top: 491px;
+  left: -22%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: drop-shadow(0 0 5px red);
+}
+
+#leaf5 {
+  width: 310px;
+  height: 320px;
+  position: absolute;
+  top: 491px;
+  left: 121%;
+  transform: translate(-50%, -50%);
+}
