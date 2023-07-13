@@ -11,6 +11,11 @@
   height: 275px;
   filter: drop-shadow(0 0 10px red);
   cursor: pointer;
+  transition: filter 0.3s;
+}
+
+#clover:hover {
+  filter: drop-shadow(0 0 40px red);
 }
 
 .hidden-text6 {
@@ -129,6 +134,11 @@
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px rgb(11, 189, 220));
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#leaf1:hover {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .hidden-text1 {
@@ -159,6 +169,11 @@
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px rgb(87, 7, 103));
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#leaf2:hover {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .hidden-text2 {
@@ -189,6 +204,11 @@
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px rgb(13, 194, 74));
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#leaf3:hover {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .hidden-text3 {
@@ -220,6 +240,11 @@
   z-index: 1;
   filter: drop-shadow(0 0 5px red);
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#leaf4:hover {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .hidden-text4 {
@@ -250,6 +275,11 @@
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px black);
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#leaf5:hover {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .hidden-text5 {
@@ -269,4 +299,15 @@
 #leaf5:hover+.hidden-text5 {
   opacity: 1;
   transform: translateY(0);
+}
+
+.title {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  padding: 15px;
+  color: white;
+  font-family: 'Black Clover Font', sans-serif;
+  letter-spacing: 20px;
+  font-size: 20px;
 }

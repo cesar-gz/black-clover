@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-page0',
   template: `
-    <h1>Home page</h1>
+    <link href="https://fonts.cdnfonts.com/css/black-clover-font" rel="stylesheet">
+    <p class="title">hover your mouse</p>
     <div class="ground">
       <div id="clover" (click)="handleLeafClick(6)">
         <div class="leaf"></div>
@@ -34,7 +35,7 @@ import { Router } from '@angular/router';
           <p class="hidden-text4">View the Market</p>
 
         <img src="../assets/images/asta.png" alt="Asta" id="leaf5" (click)="handleLeafClick(5)">
-          <p class="hidden-text5">Youtube Scrape Music</p>
+          <p class="hidden-text5">Scrape YouTube Music</p>
 
       </div>
     </div>
