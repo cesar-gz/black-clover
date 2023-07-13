@@ -1,0 +1,152 @@
+.ground {
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-60%) translateY(-50%);
+}
+
+#clover {
+  position: relative;
+  width: 250px;
+  height: 275px;
+  filter: drop-shadow(0 0 10px red);
+}
+
+.leaf {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.leaf::before,
+.leaf::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: rgb(27, 8, 8);
+}
+
+.leaf::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.leaf::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.leaf:nth-child(1) {
+  top: 170px;
+  left: 80px;
+  transform: rotate(2deg);
+}
+
+.leaf:nth-child(2) {
+  top: 108px;
+  left: 30px;
+  transform: rotate(288deg);
+}
+
+.leaf:nth-child(3) {
+  top: 3px;
+  left: 135px;
+  transform: rotate(70deg);
+}
+
+.leaf:nth-child(4) {
+  top: -33px;
+  left: 50px;
+  transform: rotate(215deg);
+}
+
+.leaf:nth-child(5) {
+  top: -136px;
+  left: 115px;
+  transform: rotate(498deg);
+}
+
+.star {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: -274px;
+  left: 81px;
+}
+
+.star-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 8, 8);
+  clip-path: polygon(50% 0, 60% 35%, 100% 35%, 70% 60%, 80% 100%, 50% 75%, 20% 100%, 30% 60%, 0 35%, 40% 35%);
+  box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
+  border-radius: 50%;
+}
+
+
+.relative-container {
+  position: relative;
+  top: -270px;
+  z-index: -2;
+}
+
+#leaf1 {
+  width: 275px;
+  height: 350px;
+  position: absolute;
+  top: -19px;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 5px rgb(11, 189, 220));
+}
+
+#leaf2 {
+  width: 420px;
+  height: 430px;
+  position: absolute;
+  top: 91px;
+  left: -81%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 5px rgb(87, 7, 103));
+}
+
+#leaf3 {
+  width: 220px;
+  height: 250px;
+  position: absolute;
+  top: 167px;
+  left: 132%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 5px rgb(13, 194, 74));
+}
+
+#leaf4 {
+  width: 310px;
+  height: 320px;
+  position: absolute;
+  top: 491px;
+  left: -22%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: drop-shadow(0 0 5px red);
+}
+
+#leaf5 {
+  width: 310px;
+  height: 320px;
+  position: absolute;
+  top: 491px;
+  left: 121%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 5px black);
+}
