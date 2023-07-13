@@ -8,3 +8,14 @@
   transform: translateX(-50%);
   margin: 0 auto;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  color: white;
+  font-family: 'Black Clover Font', sans-serif;
+  letter-spacing: 20px;
+  font-size: 20px;
+}

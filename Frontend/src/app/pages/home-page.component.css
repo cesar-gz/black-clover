@@ -10,6 +10,26 @@
   width: 250px;
   height: 275px;
   filter: drop-shadow(0 0 10px red);
+  cursor: pointer;
+}
+
+.hidden-text6 {
+  position: absolute;
+  top: 500px;
+  left: 400px;
+  width: 50%;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 1s;
+  color: rgb(220, 20, 20);
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: translateY(50px);
+}
+
+#clover:hover+.hidden-text6 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .leaf {
@@ -108,6 +128,26 @@
   left: 45%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px rgb(11, 189, 220));
+  cursor: pointer;
+}
+
+.hidden-text1 {
+  position: absolute;
+  width: 85%;
+  top: -140px;
+  left: 250px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 1s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: translateY(50px);
+}
+
+#leaf1:hover+.hidden-text1 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #leaf2 {
@@ -118,6 +158,26 @@
   left: -81%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px rgb(87, 7, 103));
+  cursor: pointer;
+}
+
+.hidden-text2 {
+  position: absolute;
+  width: 60%;
+  top: 0;
+  left: -380px;
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.5s, transform 1s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: translateY(50px);
+}
+
+#leaf2:hover+.hidden-text2 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #leaf3 {
@@ -128,6 +188,26 @@
   left: 132%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px rgb(13, 194, 74));
+  cursor: pointer;
+}
+
+.hidden-text3 {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 175%;
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.5s, transform 1s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: translateY(50px);
+}
+
+#leaf3:hover+.hidden-text3 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #leaf4 {
@@ -139,6 +219,26 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   filter: drop-shadow(0 0 5px red);
+  cursor: pointer;
+}
+
+.hidden-text4 {
+  position: absolute;
+  width: 50%;
+  top: 420px;
+  left: -130%;
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.5s, transform 1s;
+  color: rgb(220, 20, 20);
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: translateY(50px);
+}
+
+#leaf4:hover+.hidden-text4 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #leaf5 {
@@ -149,4 +249,24 @@
   left: 121%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 5px black);
+  cursor: pointer;
+}
+
+.hidden-text5 {
+  position: absolute;
+  width: 80%;;
+  top: 350px;
+  left: 180%;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 1s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: translateY(50px);
+}
+
+#leaf5:hover+.hidden-text5 {
+  opacity: 1;
+  transform: translateY(0);
 }
