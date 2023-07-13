@@ -1,0 +1,26 @@
+<link href="https://fonts.cdnfonts.com/css/black-clover-font" rel="stylesheet">
+<p class="title">Email Formatter</p>
+
+<div class="chat-container">
+  <button id="button1" (click)="showTextBox('textBox1')">Professional</button>
+  <button id="button2" (click)="showTextBox('textBox2')">Unprofessional</button>
+
+  <div id="textBox1" [hidden]="!textBox1Visible">
+    <input type="text" placeholder="The AI will format what you type here for a professional office setting">
+    <button class=submit-button (click)="submitTextBox('textBox1')">Submit</button>
+  </div>
+
+  <div id="textBox2" [hidden]="!textBox2Visible">
+    <input type="text" placeholder="The AI will format what you type here as if your Donald Trump">
+    <button class=submit-button (click)="submitTextBox('textBox2')">Submit</button>
+  </div>
+
+  <div class="loading" *ngIf="isLoading">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="output" *ngIf="outputText">
+    {{ outputText }}
+  </div>
+
+</div>

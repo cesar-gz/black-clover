@@ -1,0 +1,118 @@
+.title {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  padding: 15px;
+  color: white;
+  font-family: 'Black Clover Font', sans-serif;
+  letter-spacing: 20px;
+  font-size: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#button1 {
+  position: absolute;
+  top:30%;
+  right: 46%;
+  margin-right: 40px;
+  padding: 15px;
+  background-color: rgba(25, 22, 22, 0.826);
+  border: 1px solid rgb(243, 154, 0);
+  color: rgb(243, 154, 0);
+  font-family: Cambria;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#button1:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+#button2 {
+  position: absolute;
+  top: 30%;
+  left: 54%;
+  padding: 15px;
+  background-color: rgba(25, 22, 22, 0.826);
+  border: 1px solid #E81B23;
+  color: #E81B23;
+  font-family: Cambria;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#button2:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+input[type="text"] {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  left: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.output{
+  position: relative;
+  top: 80px;
+  color: white;
+}
+
+.spinner {
+  position: relative;
+  top: 150px;
+  border: 8px solid #030303;
+  border-top: 8px solid #db3934;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.submit-button {
+  position: relative;
+  top: 155px;
+  right: 22px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}

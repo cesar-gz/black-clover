@@ -30,6 +30,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   transform: translateY(50px);
+  border-radius: 10px;
 }
 
 #clover:hover+.hidden-text6 {
@@ -153,6 +154,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   transform: translateY(50px);
+  border-radius: 10px;
 }
 
 #leaf1:hover+.hidden-text1 {
@@ -188,6 +190,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   transform: translateY(50px);
+  border-radius: 10px;
 }
 
 #leaf2:hover+.hidden-text2 {
@@ -223,6 +226,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   transform: translateY(50px);
+  border-radius: 10px;
 }
 
 #leaf3:hover+.hidden-text3 {
@@ -259,6 +263,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   transform: translateY(50px);
+  border-radius: 10px;
 }
 
 #leaf4:hover+.hidden-text4 {
@@ -294,6 +299,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   transform: translateY(50px);
+  border-radius: 10px;
 }
 
 #leaf5:hover+.hidden-text5 {

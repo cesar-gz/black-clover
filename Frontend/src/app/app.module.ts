@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HomePageComponent } from './pages/home-page.component';
-import { Page1Component } from './pages/page1.component';
-import { Page2Component } from './pages/page2.component';
-import { Page3Component } from './pages/page3.component';
-import { Page4Component } from './pages/page4.component';
-import { Page5Component } from './pages/page5.component';
-import { Page6Component } from './pages/page6.component';
+import { HomePageComponent } from './pages/HomePage/home-page.component';
+import { Page1Component } from './pages/Newsletter/page1.component';
+import { Page2Component } from './pages/Email/page2.component';
+import { Page3Component } from './pages/TBD/page3.component';
+import { Page4Component } from './pages/Trader/page4.component';
+import { Page5Component } from './pages/Music/page5.component';
+import { Page6Component } from './pages/About/page6.component';
 
 
 @NgModule({
