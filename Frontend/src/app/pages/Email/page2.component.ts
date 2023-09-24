@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-//@ts-ignore
-import { askQuestion } from './AI.js'
+//import askQuestion from 'prompt.js';
+
 
 @Component({
   selector: 'app-page2',
@@ -12,6 +12,8 @@ export class Page2Component {
   textBox2Visible = false;
   isLoading = false;
   outputText: string = '';
+  textBox1Input: string = '';
+  textBox2Input: string = '';
 
   showTextBox(textBoxId: string) {
     if (textBoxId === 'textBox1') {
@@ -29,9 +31,11 @@ export class Page2Component {
 
     setTimeout(() => {
       if (textBoxId === 'textBox1') {
-        this.outputText = 'Formatted text for professional office setting';
+        const inputText = this.textBox1Input;
+        //this.outputText = askQuestion(inputText);
       } else if (textBoxId === 'textBox2') {
-        this.outputText = 'Formatted text for Donald Trump style';
+        const inputText = this.textBox2Input;
+        //this.outputText = askQuestion(inputText);
       }
       this.isLoading = false;
     }, 3000);
